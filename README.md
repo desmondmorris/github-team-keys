@@ -6,15 +6,16 @@ This is a small bash script that grabs the public keys for all of the users in a
 
 #### Usage
 
+First you will need to create a new [access token](https://github.com/settings/applications)
+
 Clone the repo, then run:
-````
-sh fetch.sh GH_AUTH_TOKEN organization
-````
+
+`sh fetch.sh ACCESS_TOKEN organization`
 
 Or a quick one-liner:
 
 ````
-curl -sL http://git.io/soXC7Q | bash -s GH_AUTH_TOKEN organization > authorized_keys
+curl -sL http://git.io/soXC7Q | bash -s ACCESS_TOKEN organization > authorized_keys
 ````
 
 #### Credits
